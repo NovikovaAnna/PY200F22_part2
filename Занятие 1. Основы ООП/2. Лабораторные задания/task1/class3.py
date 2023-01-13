@@ -4,7 +4,7 @@ import doctest
 class Education:
     def __init__(self, studing_age: int, degree: str, specialization: str):
         """
-        Создание и подготовка к работе объекта "образование"
+        Создание и подготовка к работе объекта  "образование"
         :param studing_age: срок обучения
         :param degree: степень
         :param specialization: специализация

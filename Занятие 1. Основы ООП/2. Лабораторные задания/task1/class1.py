@@ -91,7 +91,7 @@ class Dog:
 
     def __repr__(self) -> str:
         """
-        Метод repr для создания копии объекта класса
+        Метод repr для создания копии объекта  класса
         :return: объект класса Cat со всеми атрибутами
         """
         return f"Dog({self.age}, {self.name}, {self.purpose}, {self.wool})"

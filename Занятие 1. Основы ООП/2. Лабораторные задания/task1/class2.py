@@ -4,7 +4,7 @@ import doctest
 class Vag_car:
     def __init__(self, brand: str, age: int, car_milage: int, condition: str):
         """
-        Создание и подготовка к работе объекта "автомобиль"
+        Создание и подготовка к работе объекта  "автомобиль"
         :param brand: марка автомобиля
         :param age: возраст
         :param car_milage: пробег
