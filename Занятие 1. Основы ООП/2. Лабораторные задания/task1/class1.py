@@ -86,7 +86,7 @@ class Dog:
         11
         """
         if increase_age <= 0:
-            raise ValueError('"increase_age" должен быть больше нуля')
+            raise ValueError('"increase_age"  должен быть больше нуля')
         self.age += increase_age
 
     def __repr__(self) -> str:

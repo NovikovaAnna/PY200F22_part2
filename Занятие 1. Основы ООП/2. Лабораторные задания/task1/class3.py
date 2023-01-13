@@ -7,11 +7,11 @@ class Education:
         Создание и подготовка к работе объекта  "образование"
         :param studing_age: срок обучения
         :param degree: степень
-        :param specialization: специализация
+        :param specialization:  специализация
         Пример:
-        >>> education_1 = Education(5, 'specialist', 'economy')
+        >>> edcation_1 = Education(5, 'specialist', 'economy')
         >>> education_1.studing_age
-        5
+        5u
         >>> education_1.degree
         'specialist'
         >>> education_1.specialization

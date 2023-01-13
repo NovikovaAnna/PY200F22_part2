@@ -7,7 +7,7 @@ class Vag_car:
         Создание и подготовка к работе объекта  "автомобиль"
         :param brand: марка автомобиля
         :param age: возраст
-        :param car_milage: пробег
+        :param car_milage:  пробег
         :param condition: состояние
         Пример:
         >>> audi_q3 = Vag_car(audi, 10, 166700, 'non_broken')
