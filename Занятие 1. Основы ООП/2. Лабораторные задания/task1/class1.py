@@ -57,7 +57,7 @@ class Dog:
         """
         Инициализация атрибута purpose
         :param purpose: назначение собаки
-        :return: назначение собаки
+        :return:  назначение собаки
         """
         if not isinstance(purpose, str):
             raise TypeError('"purpose" должен быть типа "str"')
@@ -86,12 +86,12 @@ class Dog:
         11
         """
         if increase_age <= 0:
-            raise ValueError('"increase_age"  должен быть больше нуля')
+            raise ValueError('"increase_age" должен быть больше нуля')
         self.age += increase_age
 
     def __repr__(self) -> str:
         """
-        Метод repr для создания копии объекта  класса
+        Метод repr для создания копии объекта класса
         :return: объект класса Cat со всеми атрибутами
         """
         return f"Dog({self.age}, {self.name}, {self.purpose}, {self.wool})"
