@@ -56,7 +56,7 @@ class Dog:
     def init_purpose(self, purpose: str):
         """
         Инициализация атрибута purpose
-        :param purpose: назначение собаки
+        :param purpose:  назначение собаки
         :return:  назначение собаки
         """
         if not isinstance(purpose, str):
