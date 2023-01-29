@@ -1,10 +1,6 @@
 from typing import Union
 
 
-def name_setter(args):
-    pass
-
-
 def author_setter(args):
     pass
 
@@ -12,10 +8,16 @@ def author_setter(args):
 class Book:
     """ Базовый класс книги. """
     def __init__(self, name: str, author: str):
-        self._name = None
-        self._author = None
+        #self._name = None
+        #self._author = None
         self.name = name
         self.author = author
+        self.is_valid_name(self.name)
+
+    def is_valid_name(self, name):
+        if not  isinstance(name, str):
+            raise TypeError("Название только тип str")
+        self._name = name
 
 
 
@@ -34,12 +36,11 @@ class Book:
     def name(self)->str:
         return self._name
 
-    @name_setter
-    def name(self, name: str):
-        if isinstance(name, str):
-            self._name = name
-            return
-        raise TypeError("Название только str тип")
+   # @name_setter
+    #if isinstance(name, str):
+            #self._name = name
+            #return
+        #raise TypeError("Название только str тип")
 
 
 
@@ -54,7 +55,7 @@ def pages_setter(args):
     pass
 
 
-class PaperBook:
+class PaperBook(Book):
     def __init__(self, name: str, author: str, pages: int):
         self.name = name
         self.author = author
@@ -75,10 +76,6 @@ class PaperBook:
             self._pages = value
 
 
-def duration_setter(args):
-    pass
-
-
 class AudioBook:
     def __init__(self, name: str, author: str, duration: float):
         self.name = name
@@ -87,6 +84,9 @@ class AudioBook:
 
     def __str__(self):
         return f"Книга {self.name}. Автор {self.author}"
+
+    def duration_setter(args):
+        pass
 
     @property
     def duration(self)-> float:
@@ -102,5 +102,4 @@ class AudioBook:
 if __name__ == "__main__":
     a = PaperBook("Crime and Punishment","F.Dostoyevsky", 486)
     b = AudioBook("Viy", "N.Gogol", 2.45)
-
-
+    print(a)
